@@ -27,3 +27,18 @@ document.write("<br><br>\"Be who you are and say what you feel,"+
 //multiple variables
  var Family="The Team", Mom = "Maria", Dad = "Greg", Daughter = "Jessie", Son="Jim";
  document.write(Son);
+
+
+ //assign fontcolor for the above
+ var Son=Son.fontcolor("blue");
+ document.write(Son);
+
+//expression 
+//“document.getElementById” is a method that returns an element.
+//The element has an ID attribute with a specific value assigned to it.  
+//It is used mainly to control or get information from an element within your code.  
+//If it can’t find the element with the specified value, it will return “null.”
+ var y = x+5
+
+
+
