@@ -13,6 +13,9 @@ document.write(A);
 var x ="Timea";
 window.alert(x);
 
+
+document.write(A+x)
+
 //escaping characters
 document.write("<br>Lisa told Bart, \"Knock it off Bart\"\, don\`t\ ...");
 
@@ -23,6 +26,9 @@ document.write("<br><br>\"Be who you are and say what you feel,"+
  //concatenated strings
  var B = "<br>concat" + "string<br><br>"
  document.write(B)
+
+
+ 
 
 //multiple variables
  var Family="The Team", Mom = "Maria", Dad = "Greg", Daughter = "Jessie", Son="Jim";
