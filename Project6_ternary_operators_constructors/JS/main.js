@@ -64,3 +64,32 @@ function myFunction1(){
     "Jim is " + Jim.People_Age + " years old and is  " + Jim.People_Height + " tall.";
 }
 
+
+// Challange 9 - Reserved word
+function People(Age, Height, Weight, Gender) {
+    this.People_Age = Age; //`this` is a keyword, In a constructor function this does not have a value. It is a substitute for the new object. The value of this will become the new object when a new object is created.
+    this.People_Height = Height;
+    this.People_Weight = Weight; 
+    this.People_Gender = Gender;
+    
+}
+
+var Jim = new People(18, "174 cm", "82kg", "Man");
+var true = new People(22, "162 cm", "65kg", "Woman");
+var Arnold = new People(34, "169 cm", "92kg", "Man");
+function myFunction1(){
+    document.getElementById("true1").innerHTML= 
+    "true is " + true.People_Age + " years old and is  " + true.People_Height + " tall.";
+}
+
+//Assignment 38 
+function nestFunc() {
+document.getElementById("Nested_Function").innerHTML = addme();
+    function addme() {
+        var Starting_point = 1;
+            function plus_one() {Starting_point += 1;}
+            plus_one();
+            return Starting_point;
+    }
+
+}
