@@ -67,7 +67,7 @@ function myFunction1(){
 
 // Challange 9 - Reserved word - 
 //IT WAS TRIED WITH A REVERSED WORD BUT GITHUB DOES NOT LET ME COMMIT AND SZNCHRONIZE DUE TO THE PROBLEM EXISTING
-//HENCE IT IS A WORKIKNG FUNCTION
+//HENCE IT IS A WORKIKNG fun
 function People(Age, Height, Weight, Gender) {
     this.People_Age = Age; //`this` is a keyword, In a constructor function this does not have a value. It is a substitute for the new object. The value of this will become the new object when a new object is created.
     this.People_Height = Height;
