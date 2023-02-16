@@ -65,7 +65,9 @@ function myFunction1(){
 }
 
 
-// Challange 9 - Reserved word
+// Challange 9 - Reserved word - 
+//IT WAS TRIED WITH A REVERSED WORD BUT GITHUB DOES NOT LET ME COMMIT AND SZNCHRONIZE DUE TO THE PROBLEM EXISTING
+//HENCE IT IS A WORKIKNG FUNCTION
 function People(Age, Height, Weight, Gender) {
     this.People_Age = Age; //`this` is a keyword, In a constructor function this does not have a value. It is a substitute for the new object. The value of this will become the new object when a new object is created.
     this.People_Height = Height;
@@ -75,11 +77,11 @@ function People(Age, Height, Weight, Gender) {
 }
 
 var Jim = new People(18, "174 cm", "82kg", "Man");
-var true = new People(22, "162 cm", "65kg", "Woman");
+var Sara = new People(22, "162 cm", "65kg", "Woman");
 var Arnold = new People(34, "169 cm", "92kg", "Man");
-function myFunction1(){
-    document.getElementById("true1").innerHTML= 
-    "true is " + true.People_Age + " years old and is  " + true.People_Height + " tall.";
+function myFunction2(){
+    document.getElementById("good1").innerHTML= 
+    "Sara is " + Sara.People_Age + " years old and is  " + Sara.People_Height + " tall.";
 }
 
 //Assignment 38 
