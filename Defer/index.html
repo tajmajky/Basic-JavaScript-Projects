@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+
+<title> Defer   </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body bgcolor="blue">
+
+    <!-- Defer attribute-->
+    <!-- Like the async attribute, the defer attribute is only used on external scripts.  Additionally, the document.write() method will not work 
+        when using the defer attribute either.  If you use this method in your JavaScript file, you should place your <script> element above the closing body 
+        tag instead of using the defer attribute.-->
+<script src="JS/defer1.js" async></script> <!-- Defer1 attribute, The entire document would load, and then the defer_1.js file would be executed before the defer_2.js file.  If those same scripts had the async attribute, the script files would be loaded and executed as soon as they were ready.  This could mean that defer_2.js could execute before defer_1.js.-->
+<script src="JS/defer2.js" async></script> <!-- Defer2 attribute-->
+<p id="p1">Hello World!</p>
+
+
+</body>
+</html>
