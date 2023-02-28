@@ -65,7 +65,7 @@ function placeXOrO(squareNumber) {
         return true;
     }
 
-    //This function restults ina a random square being selected.
+    //This function results in a random square being selected.
     function computersTurn() {
 
         //This boolean is needed for our while loop
@@ -111,9 +111,9 @@ function checkWinConditions() {
     // X 2,5,8 condition
     else if (arrayIncludes('2X', '5X', '8X')) {drawWinLine(508, 50, 508, 558); }
     // X 6,4,2 condition
-    else if (arrayIncludes('6X', '4X', '2X')) {drawWinLine(100, 508, 510, 558); }
+    else if (arrayIncludes('6X', '4X', '2X')) {drawWinLine(100, 508, 510, 90); }
     // X 0,4,8 condition
-    else if (arrayIncludes('0X', '4X', '8X')) {drawWinLine(100, 100, 100, 520); }
+    else if (arrayIncludes('0X', '4X', '8X')) {drawWinLine(100, 100, 520, 520); }
     // O 0,1,2 condition
     else if (arrayIncludes('0O', '1O', '2O')) {drawWinLine(50, 100, 558, 100); }
     // O 3,4,5 condition
@@ -121,7 +121,7 @@ function checkWinConditions() {
     // O 6,7,8 condition
     else if (arrayIncludes('6O', '7O', '8O')) {drawWinLine(50, 508, 558, 508); }
     // O 0,3,6 condition
-    else if (arrayIncludes('0O', '3O', '6O')) {drawWinLine(100, 50, 100, 508); }
+    else if (arrayIncludes('0O', '3O', '6O')) {drawWinLine(100, 50, 100, 558); }
     // O 1,4,7 condition
     else if (arrayIncludes('1O', '4O', '7O')) {drawWinLine(304, 50, 304, 558); }
     // O 2,5,8 condition
@@ -151,7 +151,7 @@ function checkWinConditions() {
         const b = selectedSquares.includes(squareB);
         const c = selectedSquares.includes(squareC);
 
-        //Ifthe 3 var we pass are all included in our array true is
+        //If the 3 var we pass are all included in our array true is
         //returned and our else if condition executes the drawWinLine function
         if (a === true && b === true && c === true) {return true;}
     }
@@ -205,13 +205,13 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
 
         //This var stores temp y axis data we update in our animation loop.
         y = y1;
-}
+
 
  //This function interacts with the canvas
     function animateLineDrawing() {
 
         //This var creates the loop for when the game ends it restarts.
-        const animationLoop = reqestAnimationFrame(animateLineDrawing);
+        const animationLoop = requestAnimationFrame(animateLineDrawing);
 
         //This method clears content from last loop iteration
         c.clearRect(0, 0, 608, 608);
@@ -229,7 +229,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         c.lineWidth = 10; 
 
         //This method sets the color of our line
-        c.strokeStyle = 'rgba(70, 255, 33, .8)';
+        c.strokeStyle = 'rgb(255, 255, 255)';
 
         //This method draws everything we laid out above
         c.stroke();
@@ -237,7 +237,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         //This condition checks if we have reached the endpoint
         if ( x1 <= x2 && y1 <= y2) {
             //This condition adds 10 to the previous end x point
-            if (x > x2) {x += 10;}
+            if (x < x2) {x += 10;}
             //This condition adds 10 to the previous end y point
             if (y < y2)  { y += 10; }
             ////This condition cancels our animation loop if reach the end points
@@ -279,6 +279,19 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
 
     //This line waits 1 sec
     //Then clears canvas, resets game and allows clicking again
-    setTimeout(function() {clear(); resetGame() ; } , 1000);
+    setTimeout(function () { clear(); resetGame(); }, 1000);
+}
 
+//This function resets the game in a tie or a win
+function resetGame() {
+    //This for loop iterates through each html square element
+    for (let i = 0; i < 9; i++ ) {
+        //This var gets the html element of i
+        let square = document.getElementById(String(i));
+        //This removes our elements backgroundImage
+        square.style.backgroundImage = '';
+    }
+    //This resets our array so it is empty and we can start over
+    selectedSquares = [];
+}
 
