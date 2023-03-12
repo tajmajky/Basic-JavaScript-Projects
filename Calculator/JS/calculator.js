@@ -1,4 +1,4 @@
-// creates an object to keep track of values 
+// creates an object to keep track of values. these are KVPs(key-value pairs)
 const Calculator = {
 
     //this displays 0 on the screen
@@ -8,13 +8,13 @@ const Calculator = {
     First_Operand: null,
 
     //this checks whether or not the second operand has been input
-    Wait_Second_Operand: false, 
+    Wait_Second_Operand: false, //this is false because when we start using the calculator the prg is expecting the first operand not this, the second operand, so for now it has to be false. otherwise 
 
     //this will hold the operator. we set it to null for now
     operator: null,
 };
 
-//this modifies values each time a button isclicked
+//this modifies values each time a button is clicked
 function Input_Digit(digit) {
     const { Display_Value, Wait_Second_Operand } = Calculator;
 
@@ -24,7 +24,7 @@ function Input_Digit(digit) {
         Calculator.Display_Value = digit;
         Calculator.Wait_Second_Operand = false;
     } else {
-//this overwrites Display_Value if the current calue is 0
+//this overwrites Display_Value if the current value is 0
 //otherwise it adds onto it
         Calculator.Display_Value = Display_Value === '0' ? digit : Display_Value + digit;
     }
