@@ -1,38 +1,16 @@
 
-* { /*sets font color to white*/
-    color: white;
-
-
-}
-
-div{ /*sets all div element*/
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: red;
-}
-
-h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-}
-
 
 #menuBG { /*size of the menu box*/
-
+    width: 400px;
     height: 470px;
-    margin: 30px auto;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    margin: 10px auto;
+
 }
 
 #frmMenu {
     width: 400px;
     height: 200px;
+
 }
 
 #totalPrice {
@@ -40,6 +18,7 @@ h3 {
     height: 190px;
     margin: 0 auto;
     float: right;
+
 }
 
 .left {
@@ -70,9 +49,6 @@ h3 {
 
 #btnOrder {
     margin: 10px 0px 0px 100px;
-    width: 150px;
+    width: 100px;
     height: 40px;
-    background-color: #6e706e; /* Green */
-    color: white;
-    text-align: center;
 }
