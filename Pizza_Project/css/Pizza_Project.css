@@ -1,4 +1,23 @@
+* {
+    background-color: rgb(218, 213, 213);
+}
 
+h1 {
+    color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h3 {
+    color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+div {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 #menuBG { /*size of the menu box*/
     width: 400px;
@@ -26,6 +45,7 @@
     height: 200px;
     float: left;
 }
+
 
 .right {
     width: 200px;

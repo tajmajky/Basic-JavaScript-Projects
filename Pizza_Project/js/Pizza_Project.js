@@ -46,7 +46,7 @@ function getTopping(runningTotal,text1) {
     }
     var toppingCount = selectedTopping.length;
     if (toppingCount > 1) {
-        toppingTotal = (toppingCount - 1);
+        toppingTotal = (toppingCount - 1); //1 free topping
     } else { 
         toppingTotal = 0;
     }
