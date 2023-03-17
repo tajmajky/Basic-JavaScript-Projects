@@ -1,0 +1,191 @@
+/* AUTHOR: TIMEA TOTH*/
+
+html { /*no need for hashtag*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    -webkit-tap-highlight-color: rgba (0, 0, 0, 0); /*all browsers to recognize colour*/
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%; /* for spec browsers to adjust auto*/
+}
+
+body {
+    font-size: 20px;
+    margin: 2px; /* margins (space) between Home, Paintings etc. buttons and the top of the screen*/
+    font-family:'Raleway', sans-serif;
+    line-height: 1.428571430;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    font-weight: 600;
+    color: #bdbd08;
+    margin: 2px; 
+    padding: 2% 0% 2% 2%;
+    opacity: 1;
+    border-radius: 20px;
+    text-align: center;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 2px #090b0d;
+}
+
+h2 {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+#title { 
+    background: url(../Images/Feszty.jpg) no-repeat 50% 50%;
+     background-attachment: fixed;/*the main  background is fixed so when i scroll down, it does not move with the mouse*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    height: 500px;
+    color: rgba(240, 244, 13, 1);
+    width: 100%;
+    opacity: 1;
+    text-align: center;
+    margin: 0px 0px 0px 10px ;
+    padding: 2% 0% 2% 2%;
+    border: 5px solid #9d9fa2;
+    border-radius: 20px;
+}
+
+#Paintings {
+   
+    outline: none;
+    font-weight: 600;
+    color: #bdbd08;
+    width: 100%;
+    margin: 10px;
+    padding: 2% 0% 2% 2%;
+    border-radius: 20px;
+    background: #17152c;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5,  0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+#Museums {
+   
+    outline: none;
+    font-weight: 600;
+    color: #bdbd08;
+    padding: 2% 0% 2% 2%;
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    background: #17152c;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5,  0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.video-box::before { /*this is the underline*/
+    display: block;
+    content: "";
+    height: 5px;
+    width: 300px;
+    background: #bdbd08;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0, 0.5);
+}
+
+.video-box{
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    font-weight: 600;
+    color: #bdbd08;
+    background:  #17152c;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#vidi {
+    box-shadow: 12px 12px 10px #bdbd08;
+}
+
+#contact {
+    outline: none;
+    font-weight: 600;
+    color: #bdbd08;
+    padding: 2% 0% 2% 2%;
+    width: 100%;
+    margin: 10px;
+    border-radius: 20px;
+    background: #17152c;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5,  0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.rsvp input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E0F;
+    padding: 12px 12px;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px auto;
+    border-radius: 7px;
+    background: #13161b;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5,  0.15);
+    font-family: 'Raleway', sans-serif;
+   
+}
+.rsvp input[type="text"]:hover {
+    box-shadow: 0 0 15px white;
+}
+
+.form-spacer {
+    padding: 30px 39px;
+}
+
+input[type=submit] {
+    color: rgb(5, 5, 5);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 5%;
+    font-size: 14px;
+    transition: border-color 0.3 color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #aad51d;
+    box-shadow:  1px 1px 4px 0 rgba(100, 65, 0,.3);
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    color: rgb(248, 248, 248);
+    box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0, 0.5);
+}
+
+/*FOOTER STYLES*/
+
+.footer {
+    background-color:#17152c ;
+
+    font-family: 'Raleway', sans-serif;
+    color: #bdbd08;
+    text-shadow: 2px 2px 8px 0 (0, 0, 0, 0.4);
+    border-radius: 20px;
+    width: 100%;
+    margin: 10px 0px 10px 10px;
+    padding: 1% 0% 2% 2%;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5,  0.15);
+    text-align: center;
+}
+.footer:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+ }
