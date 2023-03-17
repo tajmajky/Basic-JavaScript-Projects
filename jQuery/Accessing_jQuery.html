@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> <!--this url is needed for jQuery to work -->
+</head>
+<body>
+<script>
+
+    //line 16 must be single quote '' to make sure it does not interfere with the rest of the code
+    jQuery(document).ready(function() { //when the document is ready, do the below function
+            $("html").append( //grab the HTML TAG (affect the HTML DOM Element and APPEND the below information: (the below will be displayed on the webpage)
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                            <p id='4'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+            </body>"     
+        );
+
+        //Next function
+
+        $("#2").css({"color":"red"}); //this means target the p id 2 tag and change the font color to red. This will change p on line 21 only
+
+        //Next function
+
+        $("#3").click(function() { //this function will hide the h1 tag when we click on the 3rd paragraph
+            $('h1').hide();
+        });
+
+        //Next function
+        // Binding multiple events with different handlers
+
+        $( "#1" ).on({
+            "click": function() { console.log( "clicked!" ); },
+            "mouseover": function() { console.log( "hovered!" ); }
+        });
+
+        //Next function
+        // Slowly hide paragraph #4
+        $( "#4" ).hide( "slow" );
+
+
+
+    });
+
+
+
+
+
+</script>
+</body>
+</html>
