@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- React and React DOM scripts from CDN -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <title> React2</title>
+</head>
+<body>
+    <div id="Like_Button_Container"></div>
+    <script>
+        // Creating a reference to React.createElement function for convenience
+        const X = React.createElement;
+        
+        // Defining a class-based component called "likeButton"
+        class likeButton extends React.Component {
+            constructor(props) {
+                // Invoking the constructor of the parent class and passing it the props
+                super(props);
+                // Initializing the component state with an object that has a "liked" property set to false
+                this.state = { liked: false} ; 
+            }
+            // Rendering the component
+            render() {
+                // Conditional statement to determine the content to be rendered
+                if (this.state.liked) {
+                    return 'You clicked the Like button!';
+                }
+
+            // Returning an element created with React.createElement
+            // The button element has an onClick event listener that updates the state
+            // when the button is clicked
+            return X(
+                'button',
+                {onClick: () => this.setState({ liked: true}) },
+                'Like'
+            );
+        }
+    }
+
+    const domContainer = document.querySelector('#Like_Button_Container');
+    ReactDOM.render(X(likeButton), domContainer);
+
+    </script>
+
+    <!--The above code is an HTML file that contains JavaScript code to create a simple React component. Here's what the code does:
+
+The HTML file includes the necessary meta tags and imports the React and React DOM libraries from a CDN.
+The JavaScript code defines a class-based component called likeButton.
+The likeButton component has a constructor that initializes the component state with an object that has a liked property set to false.
+The likeButton component also has a render method that determines what content to render based on the value of the liked property in the component state.
+If the liked property is true, the render method returns a string that says "You clicked the like button!".
+If the liked property is false, the render method returns a button element that has an onClick event listener that updates the component state by setting liked to true.
+The JavaScript code also creates a reference to the React.createElement function for convenience, which is assigned to the variable X.
+Finally, the JavaScript code is wrapped in a script tag, which allows it to be executed in the context of the HTML document when it is loaded in a web browser.-->
+    
+</body>
+</html>

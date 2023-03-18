@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Importing React and ReactDOM libraries-->
+    <script src="react.js"></script>
+    <script src="react-dom.js"></script>
+    <title>React</title>
+
+<!--As a reminder, CDN is short for “content delivery network”. 
+    A CDN is a network that delivers web pages to a user, based on the location of the user, the origin of the webpage and the server.
+    It is common to reference CDNs within code so that various frameworks and libraries can be accessed.
+    Meaning, instead of downloading and installing React, you can also link to it via a URL. You would do this by writing this code 
+    within the <head> element:
+        
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        -->
+</head>
+<body>
+
+<!--We are calling built in React methods and functions.
+    Some of the code above is React-specific, including:
+    React.createClass – creates component classes
+    ReactDOM.render() – used to render a React Component or Components
+    React.createFactory – a function that generates a factory (object that can create other objects)-->
+<!--setInterval() – a method that evaluates an expression at specified intervals (milliseconds)
+    Using the above React code, we created a timer that counts upward.  -->
+
+
+        <!--Container element where React code will be rendered-->
+        <div id="My_React_Code"></div>
+
+        <script>
+            //Defining a new component class named "Counter" using React.createClass method.
+            var Counter = React.createClass({
+                //The render method of the Counter class which will be called to render the component.
+                render:function() {
+                    //Calculating the time passed since the component was rendered.
+                    var time_Passed = Math.round(this.props.time_Passed / 100);
+                    //Converting the time passed to seconds format.
+                    var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0');
+                    //Creating a string containing the time passed since component rendering.
+                    var text = 'My React code started running '  + 
+                        seconds_Passed + ' seconds ago!';
+                    //Returning a new paragraph element containing the text string.
+                    return React.DOM.p(null, text);
+                }
+            });
+
+            //Creating a new factory object using React.createFactory method.
+            var counter_Factory = React.createFactory(Counter);
+            //Getting the current time to be used for the timer.
+            var start_Counting = new Date().getTime();
+            //Setting a timer to call the render method of Counter component using ReactDOM.render method every 50 milliseconds.
+            setInterval (function() {
+                ReactDOM.render(
+                    counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+                    document.getElementById('My_React_Code')
+                );
+            }, 50);
+            
+            </script>
+
+    </body>
+</html>
