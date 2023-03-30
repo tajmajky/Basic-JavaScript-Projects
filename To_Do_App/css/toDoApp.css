@@ -1,0 +1,60 @@
+html {
+
+    font-family: 'Marck Script', cursive;
+    text-align: center;
+}
+
+body {
+    background: url(../img/4523800.jpg);
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    margin: auto;
+   font-family: 'Charm';
+ 
+}
+
+.container {
+    background-color: rgb(203, 242, 203);
+    opacity: 0.9;
+    margin-top: 30px;
+}
+
+button {
+
+    font-family: 'Marck Script', cursive;
+    text-align: center;
+
+
+}
+
+input {
+    margin: auto;
+    width: 500px;
+    height: 60px;
+    font-size: 40px; 
+    border: 0;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+}
+
+input:focus {
+    outline: none;
+}
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+.footer {
+    border-top: 1px solid #000;
+   
+    font-size: 20px;
+    font-family: 'Charm';
+
+}
