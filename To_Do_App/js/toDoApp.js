@@ -44,13 +44,14 @@ function show() {
         /* this also displays the task as a list and creates the button with the "x" */
         html += '<li>' + todos[i] + '<button class="remove" id="' + i + '">x</button></li>';
     };
+
+    html += '</ul>';
+    /* This displays the task as a list */
+    document.getElementById('todos').innerHTML = html;
     var buttons = document.getElementsByClassName('remove');
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', remove);
     };
-    html += '</ul>';
-    /* This displays the task as a list */
-    document.getElementById('todos').innerHTML = html;
 }
 
 /*This displays the inputed task when the `Add item` button is clicked */
