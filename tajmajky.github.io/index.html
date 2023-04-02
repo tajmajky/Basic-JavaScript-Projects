@@ -12,7 +12,8 @@
 
     <!--Body-->
     <body class="Background">
-        
+      
+  
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
@@ -54,7 +55,7 @@
         <div class="Row" id="About">
             <!--Left column-->
             <div class="Column_2">
-                <img src="./images/me.jpg" style="width: 270px; height:360px;  box-shadow: 20px 20px 10px #ffffff;" alt"="Replace with your own image and description">
+                <img src="./images/me.jpg" style="width: 270px; height:360px;  box-shadow: 20px 20px 10px #ffffff;" alt="Replace with your own image and description">
             </div>
             <!--Right column-->
             <div class="Column_1">
@@ -65,7 +66,7 @@
                     <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Advanced Web & Software Developement Course, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.<br> 
                     <br> <a href="https://www.linkedin.com/in/timea-toth-25b049246">Here</a>  you can have a look at my LinkedIn profile & learn a bit more about me.
                     <br>
-                    <br>As a web developer, I would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                    <br>As a web developer, I would love to work with you on your projects. Contact me below!
                 </p>
             </div>
         </div>
@@ -82,7 +83,7 @@
             </div>
             <!--Right column-->
             <div class="Column_2">
-                <a href="https://github.com/the-tech-academy" target="_blank"><img src="images/github.jpg"  alt="GitHub Logo"></a>
+                <a href="https://github.com/tajmajky/tajmajky.github.io" target="_blank"><img src="images/github.jpg"  alt="GitHub Logo"></a>
             </div>
         </div>
 
@@ -111,8 +112,75 @@
                     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                 </form>
                 </div>
-                
-        
+
+
+                <div class="rowImg">
+                    <div class="myImages" id="logo"></div>
+                    <img src="./images/LOGOS/pitman.png" style="width: 180px; height: 100px;">
+                    <img src="./images/LOGOS/codecademy.jpg" style="width: 180px; height: 100px;">
+                    <img src="./images/LOGOS/codecamp1.png" style="width: 180px; height: 100px;">
+                    <img src="./images/LOGOS/js_html_css_logo.jpg" style="width: 180px; height: 100px;">
+                    <img src="./images/LOGOS/sql.jpg" style="width: 180px; height: 100px;">
+                    </div>
+                </div>
+
+<!-- MODAL START -->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+		<div class="mySlides">
+			<div class="numbertext">1 / 5</div>
+			<img src="./images/LOGOS/codecademy.jpg" style="width:300px">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">2 / 5</div>
+			<img src="./images/LOGOS/codecamp1.png" style="width:300px">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">3 / 5</div>
+			<img src="./images/LOGOS/js_html_css_logo.jpg" style="width:300px">
+		</div>
+		
+		<div class="mySlides">
+			<div class="numbertext">4 / 5</div>
+			<img src="./images/LOGOS/pitman.png" style="width:300px">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">5 / 5</div>
+			<img src="./images/LOGOS/sql.jpg" style="width:300px">
+		</div>
+
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+
+		<!-- MODAL THUMBNAILS -->
+		<div class="column">
+			<img class="demo cursor" src="./images/LOGOS/codecademy.jpg" style="width:300px" onclick="currentSlide(1)" alt="">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/LOGOS/codecamp1.png" style="width:300px" onclick="currentSlide(2)" alt="">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/LOGOS/js_html_css_logo.jpg" style="width:300px" onclick="currentSlide(3)" alt="">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/LOGOS/pitman.png" style="width:300px" onclick="currentSlide(4)" alt="">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./images/LOGOS/sql.jpg" style="width:300px" onclick="currentSlide(5)" alt="">
+		</div>
+	</div>
+</div>
+<!-- MODAL FINISH -->
     
 <!-- ---------------- FOOTER ----------------------------->
 
