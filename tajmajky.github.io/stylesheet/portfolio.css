@@ -283,6 +283,8 @@ input:checked + label:after { /* decides what happens with the toggle button onc
 }
 /***** END OF VIDEO STYLING *****/
 
+
+
 /***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
 * { /* The asterisk is a universal selector that applies this effect to all elements on the page */
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
@@ -340,8 +342,6 @@ input:checked + label:after { /* decides what happens with the toggle button onc
 
 .container2 {
     width:40%;
-    
-    
     padding-left: 50px;
     padding-bottom: -50px;
     text-align: left;
@@ -372,10 +372,7 @@ input:checked + label:after { /* decides what happens with the toggle button onc
  
 }
 
-
-
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
-
 
 .Row:after {
   
@@ -430,8 +427,6 @@ input[type=text]:hover {
 }
 
 
-
-
 /* Form element */
 form {
     border-radius: 5px; /* Rounds the corners of the contact form */
@@ -439,15 +434,14 @@ form {
     padding: 10px; /* Adds padding to the contact form */
     font-family:"Old Standard TT", Helvetica, "Trebuchet MS", Optima Bold;
     font-size: 24px;
- 
 }
-/***** END OF CONTACT FORM STYLING *****/
+
 
 /***********POP UP CONTACT FORM************/
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-    backdrop-filter: blur(5px);
+
   background-color: rgb(211, 146, 151);
   font-family:"Old Standard TT", Helvetica, "Trebuchet MS", Optima Bold;
   font-size: large; 
