@@ -8,6 +8,7 @@
         <link rel="shortcut icon" type="img/jpg" href="images/logo.jpg">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Old Standard TT">
         <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+        <script src="./js/portfolio.js"></script>
     </head>
 
     <!--Body-->
@@ -116,42 +117,42 @@
 
                 <div class="rowImg">
                     <div class="myImages" id="logo"></div>
-                    <img src="./images/LOGOS/pitman.png" style="width: 180px; height: 100px;">
-                    <img src="./images/LOGOS/codecademy.jpg" style="width: 180px; height: 100px;">
-                    <img src="./images/LOGOS/codecamp1.png" style="width: 180px; height: 100px;">
-                    <img src="./images/LOGOS/js_html_css_logo.jpg" style="width: 180px; height: 100px;">
-                    <img src="./images/LOGOS/sql.jpg" style="width: 180px; height: 100px;">
+                    <img src="./images/LOGOS/pitman.png" class="logoSize" onclick="openModal(); currentSlide(1)">
+                    <img src="./images/LOGOS/codecademy.jpg" class="logoSize" onclick="openModal(); currentSlide(2)">
+                    <img src="./images/LOGOS/codecamp1.png" class="logoSize" onclick="openModal(); currentSlide(3)">
+                    <img src="./images/LOGOS/js_html_css_logo.jpg" class="logoSize" onclick="openModal(); currentSlide(4)">
+                    <img src="./images/LOGOS/sql.jpg" class="logoSize" onclick="openModal(); currentSlide(5)">
                     </div>
                 </div>
 
-<!-- MODAL START -->
+<!-- --------------------MODAL START ------------------------------->
 <div id="myModal" class="modal">
 	<span class="close cursor" onclick="closeModal()">&times;</span>
 		<div class="modal-content">
 
 		<div class="mySlides">
 			<div class="numbertext">1 / 5</div>
-			<img src="./images/LOGOS/codecademy.jpg" style="width:300px">
+			<img src="./images/LOGOS/pitman.png" >
 		</div>
 
 		<div class="mySlides">
 			<div class="numbertext">2 / 5</div>
-			<img src="./images/LOGOS/codecamp1.png" style="width:300px">
+			<img src="./images/LOGOS/codecamp1.png" >
 		</div>
 
 		<div class="mySlides">
 			<div class="numbertext">3 / 5</div>
-			<img src="./images/LOGOS/js_html_css_logo.jpg" style="width:300px">
+			<img src="./images/LOGOS/js_html_css_logo.jpg" >
 		</div>
 		
 		<div class="mySlides">
 			<div class="numbertext">4 / 5</div>
-			<img src="./images/LOGOS/pitman.png" style="width:300px">
+			<img src="./images/LOGOS/codecademy.jpg" >
 		</div>
 
 		<div class="mySlides">
 			<div class="numbertext">5 / 5</div>
-			<img src="./images/LOGOS/sql.jpg" style="width:300px">
+			<img src="./images/LOGOS/sql.jpg" >
 		</div>
 
 		
@@ -164,19 +165,19 @@
 
 		<!-- MODAL THUMBNAILS -->
 		<div class="column">
-			<img class="demo cursor" src="./images/LOGOS/codecademy.jpg" style="width:300px" onclick="currentSlide(1)" alt="">
+			<img class="thumbPic" src="./images/LOGOS/codecademy.jpg"  onclick="currentSlide(1)" alt="">
 		</div>
 		<div class="column">
-			<img class="demo cursor" src="./images/LOGOS/codecamp1.png" style="width:300px" onclick="currentSlide(2)" alt="">
+			<img class="thumbPic" src="./images/LOGOS/codecamp1.png"  onclick="currentSlide(2)" alt="">
 		</div>
 		<div class="column">
-			<img class="demo cursor" src="./images/LOGOS/js_html_css_logo.jpg" style="width:300px" onclick="currentSlide(3)" alt="">
+			<img class="thumbPic" src="./images/LOGOS/js_html_css_logo.jpg"  onclick="currentSlide(3)" alt="">
 		</div>
 		<div class="column">
-			<img class="demo cursor" src="./images/LOGOS/pitman.png" style="width:300px" onclick="currentSlide(4)" alt="">
+			<img class="thumbPic" src="./images/LOGOS/pitman.png"  onclick="currentSlide(4)" alt="">
 		</div>
 		<div class="column">
-			<img class="demo cursor" src="./images/LOGOS/sql.jpg" style="width:300px" onclick="currentSlide(5)" alt="">
+			<img class="thumbPic" src="./images/LOGOS/sql.jpg"  onclick="currentSlide(5)" alt="">
 		</div>
 	</div>
 </div>
@@ -191,6 +192,6 @@
             </p>
         </footer>
 
-        <script src="./js/portfolio.js"></script>
+ 
     </body>
 </html>

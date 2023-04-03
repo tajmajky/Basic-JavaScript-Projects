@@ -468,6 +468,7 @@ form {
   bottom: 23px;
   right: 28px;
   width: 280px;
+  z-index: 10;
 }
 
 /* The popup form - hidden by default */
@@ -531,7 +532,7 @@ background-color: rgb(210, 86, 94);
   opacity: 1;
 }
 
-/*-------------IMAGES-----------------------*/
+/*-------------LOGO IMAGES-----------------------*/
 
 .rowImg {
     margin: auto;
@@ -539,6 +540,13 @@ background-color: rgb(210, 86, 94);
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.logoSize {
+    width: 180px; 
+    height: 100px;
+
 }
 
 /* ------------------MODAL-------------- */
@@ -555,7 +563,7 @@ background-color: rgb(210, 86, 94);
   /* Create four equal columns that floats next to eachother */
   .column {
     float: left;
-    width: 33%;
+    width: 20%;
     justify-content: center;
   }
   
@@ -577,12 +585,25 @@ background-color: rgb(210, 86, 94);
   .modal-content {
     position: relative;
     justify-content: center;
-    background-color: #000000;
+    background-color: white;
     margin: 0 auto;
     padding: 0;
     width: 100%;
     max-width: 1000px;
   }
+
+
+/*-------------MODAL THUMBNAIL SETTINGS-------------*/
+  .thumbPic {
+    height: 100px;
+    width: 160px;
+  }
+  
+  .numbertext {
+    height: 100px;
+    width: 160px;
+  }
+
   
   /* The Close Button */
   .close {
